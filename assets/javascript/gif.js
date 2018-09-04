@@ -1,7 +1,7 @@
 // console.log( "ready!" );
 // $( document ).ready(function() {
 //api url and key
-var topics = ["Tesla", "Pagani", "Koenigsegg", "Mercedes-Benz","Homer Simpson", "Marge Simpson"];
+var topics = ["Tesla", "Pagani", "Koenigsegg", "Mercedes","Homer", "Marge"];
 function runApp() {
     var userInput = $(this).attr("data-topics");
     var apiKey = "zAEBPU2C4G4HZnkU4vAKHzuzQg0wS2UZ";
