@@ -1,7 +1,7 @@
 // console.log( "ready!" );
 // $( document ).ready(function() {
 //api url and key
-var topics = ["tesla", "pagani", "koenigsegg", "bmw", "apollo automobil", "mercedes-benz"];
+var topics = ["Tesla", "Pagani", "Koenigsegg", "Mercedes-Benz","Homer Simpson", "Marge Simpson"];
 function runApp() {
     var userInput = $(this).attr("data-topics");
     var apiKey = "zAEBPU2C4G4HZnkU4vAKHzuzQg0wS2UZ";
@@ -13,6 +13,7 @@ function runApp() {
         method: "GET"
     })
         // After the data from the AJAX request comes back
+
         .then(function (response) {
             var divForTheDivs = $("<div id='div1'>")
             var results = response.data;
@@ -37,19 +38,19 @@ function runApp() {
                 searchDiv.append(image);
                 divForTheDivs.append(searchDiv)
                 // Prepending the image to the images div
+                $("#imageReady").html(divForTheDivs);
                 $(".gif").on("click", function () {
                     var state = $(this).attr("data-state");
                     if (state === "still") {
-                        var dataAnimate = $(this).attr("data-gif")
-                        $(this).attr("data-state", "data-gif")
-                        $(this).attr("src", dataAnimate)
+                        $(this).attr("data-state", "gif");
+                        $(this).attr("src", $(this).attr("data-gif"));
                     }
                     else {
-                        $(this).attr("data-state", "still")
                         $(this).attr("src", $(this).attr("data-still"));
+                        $(this).attr("data-state", "still");
                     }
                 })
-                $("#imageReady").html(divForTheDivs);
+                
             }
         });
 }
