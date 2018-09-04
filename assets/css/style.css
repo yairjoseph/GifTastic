@@ -1,3 +1,10 @@
+body {
+    background-image: url("https://img00.deviantart.net/9054/i/2013/059/6/7/boke_by_tishdraw-d5wgyrc.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 button {
     background-color: lightseagreen;
     border-radius: 5px;
@@ -7,4 +14,30 @@ button {
 #searchBtn {
     height: 10px;
     width: 5px;
+}
+p{
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.searchDiv {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+#div1 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.searchDiv {
+    background-color: rgb(225, 182, 182, 0.5);
+}
+.searchForm {
+    float: right;
 }
