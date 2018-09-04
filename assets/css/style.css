@@ -5,6 +5,16 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+#jumbo {
+    background-color: rgb(255, 249, 195, 0.8);
+    color: white;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
 button {
     background-color: lightseagreen;
     border-radius: 5px;
